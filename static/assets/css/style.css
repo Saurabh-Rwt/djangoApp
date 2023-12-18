@@ -1,0 +1,21 @@
+html {
+  font-size: 16px;
+}
+
+.space {
+  padding: 80px 0;
+}
+
+.login-wrap .login-wrapper {
+  width: 40%;
+  margin: auto;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 2rem;
+}
+
+.register-wrapper {
+  width: 40%;
+  margin: auto;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 2rem;
+}/*# sourceMappingURL=style.css.map */

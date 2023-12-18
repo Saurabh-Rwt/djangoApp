@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>login</title>
+    {% include 'include/css.html' %}
+</head>
+
+<body>
+
+    {% include 'include/header.html' %}
+
+
+    <section class="space">
+        <div class="container">
+            <div class="register-wrapper">
+                <form action="{% url 'register' %}" method="post">
+                    {% csrf_token %}
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Enter Name</label>
+                        <input type="text" class="form-control" name="name" value="{{ name }}">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" name="email" value="{{email}}" >
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Phone</label>
+                        <input type="number" class="form-control" name="phone" value="{{phone}}">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Create Password</label>
+                        <input type="password" class="form-control" name="password" value="{{password}}">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Register</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    {% include 'include/js.html' %}
+   
+</body>
+
+</html>
